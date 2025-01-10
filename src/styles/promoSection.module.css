@@ -1,0 +1,25 @@
+.promoSection {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.promoSection img {
+    object-fit: contain;
+    transition: .4s;
+}
+
+.promoSection img:nth-child(1) {
+    width: 20vw;
+}
+
+.promoSection img:nth-child(2) {
+    width: 33vw;
+}
+
+.promoSection img:nth-child(3) {
+    width: 20vw;
+}
+
+.promoSection img:nth-child(1):hover {
+    transform: scale(1.5) translateX(20vw);
+}

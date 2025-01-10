@@ -1,0 +1,28 @@
+.prodResume {
+    height: 464px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.resumeTextContainer {
+    padding: 70px;
+    color: #fff;
+    background: rgb(8 135 124);
+}
+
+.resumeTextContainer h2 {
+    font-size: 39px;
+    font-weight: lighter;
+    text-transform: capitalize;
+}
+
+.resumeTextContainer h3 {
+    margin-top: 30px;
+    font-size: 25px;
+    font-weight: 400;
+}
+
+.resumeIMGcontainer {
+    background: #c6c6c6;
+    padding: 10px;
+}

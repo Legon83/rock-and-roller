@@ -1,0 +1,10 @@
+.videoContainer {
+    max-width: 70%;
+    margin: 56px auto;
+}
+
+.videoContainer video {
+    border-radius: 20px;
+    box-shadow: 2px 2px 10px #333333;
+}
+ 

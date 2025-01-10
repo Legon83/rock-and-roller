@@ -1,0 +1,66 @@
+.whatsAppSection {
+    background: #fff url(/whatsapp.jpg) center;
+    padding: 70px;
+    text-align: center;
+}
+  
+.whatsAppSection h2 {
+    color: #2A0E59;
+    font-size: 40px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+  
+.whatsAppSection a {
+    display: block;
+    background: linear-gradient( rgb(62 189 41) 0%, rgb(8 133 2) 50%, rgb(62 189 41) 100%);
+    color: #fff;
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 40px;
+    width: 268px;
+    text-align: center;
+    padding: 18px;
+    font-size: 16px;
+    border-radius: 6px;
+    transition: .3s;
+}
+  
+.whatsAppSection a:hover {
+    box-shadow: 1px 1px 5px #000;
+}
+  
+.whatsAppSection p {
+    color: #40424a;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+@media (max-width: 850px){
+    .whatsAppSection {
+        padding: 70px 15px;
+    }
+
+    .whatsAppSection h2 {
+        font-size: 28px;
+    }
+}
+
+.whatsAppLogo {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    filter: drop-shadow(1px 1px 5px #000);
+    cursor: pointer;
+    transition: .3s;
+    z-index: 10;
+}
+  
+.whatsAppLogo:hover {
+    transform: scale(1.1);
+}
+  
+.whatsAppLogo img {
+    width: 70px;
+}

@@ -1,0 +1,137 @@
+.formSection {
+    padding: 0 50px 70px 50px;
+    display: flex;
+    align-items: center;
+    background: #D0B5FF;
+}
+  
+.formSection .col60 {
+    width: 60%;
+    text-align: center;
+    padding-right: 80px;
+}
+  
+.col60 h2 {
+    font-size: 30px;
+    font-weight: 400;
+    margin-bottom: 20px;
+    padding-top: 70px;
+    color: #2A0E59;
+}
+  
+.col60 li {
+    color: #2A0E59;
+    font-weight: bold;
+    line-height: 28px;
+    list-style: none;
+    text-align: left;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+  
+.col60 li i {
+    font-weight: bold;
+}
+  
+.col60 p {
+    color: #0060a9;
+}
+  
+.col60 img {
+    margin-top: 40px;
+}
+  
+.kitSecurity {
+    width: 300px;
+}
+  
+.formSection .col40 {
+    width: 40%;
+    text-align: center;
+    padding: 80px 40px 0 40px;
+}
+  
+.col40 h3 {
+    font-size: 29px;
+    font-weight: 700;
+    color: #2A0E59;
+    margin-bottom: 10px;
+}
+  
+.col40 p {
+    color: #2A0E59;
+    font-weight: 600;
+    margin: 10px 0;
+}
+  
+.col40 input {
+    width: 100%;
+    height: 50px;
+    padding: 6px 12px;
+    font-size: 15px;
+    color: #000;
+    border: none;
+    background: #fff;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    transition: .8s;
+    box-shadow: 1px 1px 6px #000;
+}
+  
+.col40 input:focus {
+    outline: none;
+    border: 1px solid #ffab00;
+}
+  
+.col40 .areaCode {
+    width: 31%;
+    margin-right: 10px;
+}
+  
+.col40 .phoneInput {
+    display: flex;
+}
+  
+.formSection button {
+    background: #2A0E59;
+    border: none;
+    color: #fff;
+    margin-top: 30px;
+    width: 100%;
+    text-align: center;
+    padding: 18px;
+    font-size: 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: .3s;
+}
+  
+.formSection button:hover {
+    box-shadow: 1px 1px 5px #000;
+}
+
+@media (max-width: 850px){
+    .formSection {
+        flex-direction: column;
+        padding: 70px 20px;
+    }
+
+    .formSection h2 {
+        font-size: 24px;
+    }
+
+    .formSection .col60, .formSection .col40 {
+        width: 100%;
+        padding: 0;
+    }
+
+    .col60 ul {
+        display: table;
+        margin: auto;
+    }
+
+    .col40 h3 {
+        margin-top: 80px;
+    }
+}    

@@ -1,0 +1,85 @@
+.bottomSection {
+    display: flex;
+    gap: 80px;
+    background: #2A0E59;
+    padding: 70px 50px 0 0;
+}
+  
+.bottomSection h4 {
+    color: #0060a9;
+    margin-bottom: 10px;
+    font-size: 25px;
+    font-weight: 600;
+}
+  
+.bottomSection h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+    color: #D0B5FF;
+}
+  
+.bottomSection .bottomTextContainer {
+    width: 60%;
+}
+  
+.bottomSection p {
+    color: #ffab00;
+}
+  
+.bottomSection img {
+    width: 376px;
+    display: flex;
+}
+
+.askInfoBTN {
+    border: none;
+    background: #D0B5FF;
+    color: #2A0E59;
+    margin-top: 20px;
+    text-align: center;
+    padding: 18px;
+    font-size: 17px;
+    font-weight: bold;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: .3s;
+}
+  
+.askInfoBTN:hover {
+    animation: btnHover 1s linear;
+    box-shadow: 0 0 8px #efe6ff;
+}
+  
+@keyframes btnHover {
+    0% {
+      box-shadow: 0 0 10px #d0b5ff02;
+    }
+    50% {
+      box-shadow: 0 0 24px #efe6ff;
+    }
+    100% {
+      box-shadow: 0 0 8px #efe6ff;
+    }
+}
+
+@media (max-width: 850px){
+    .bottomSection {
+        flex-direction: column-reverse;
+        align-items: center;
+        padding: 70px 15px;
+        padding-bottom: 0px;
+        text-align: center;
+    }
+      
+    .bottomSection .col60, .bottomSection .col40 {
+        width: 100%;
+    }
+    
+    .bottomSection .bottomTextContainer {
+        width: 100%;
+    }
+    
+    .bottomSection a {
+        margin: 30px auto;
+    }
+}

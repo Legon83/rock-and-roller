@@ -1,0 +1,200 @@
+.mainMenu {
+  position: fixed;
+  z-index: 3;
+  top: 11px;
+  right: 78px;
+  font-size: 14px;
+}
+
+.mainMenu ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+
+.mainMenu li {
+  cursor: pointer;
+  padding: 0 10px;
+  padding-bottom: 2px;
+  transition: .4s;
+}
+
+.mainMenu li:hover {
+  background: rgb(8 135 124);
+  color: #efe6ff;
+}
+
+.landingHero {
+  position: relative;
+  margin-top: 166px;
+  padding-top: 114px;
+  padding-left: 65px;
+  padding-right: 40%;
+  height: 467px;
+  background: url(/hero.jpeg) left;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 97px;
+} 
+  
+.logoBar {
+  position: absolute;
+  top: 87px;
+  width: 100vw;
+  background: transparent;
+  transition: .4s;
+}
+
+.logoBar.active {
+  position: fixed;
+  z-index: 2;
+  top: 0;
+  background: rgb(255 255 255 / 55%);
+  height: 46px;
+  backdrop-filter: blur(9px);
+}
+  
+.logoContainer {
+  position: relative;
+  z-index: 3;
+  margin-left: calc(68px + 5vw);
+  perspective: 964px;
+  transition: 0.5s;
+}
+  
+.logoContainer.active {
+  transform: scale(0.5);
+  margin-top: -34px;
+  margin-left: -9vw;
+}
+
+.logoContainer.active .logo {
+  animation: none;
+}
+  
+.logo {
+  width: 144px;
+  filter: drop-shadow(1px 1px 6px #5b5b5b);
+  -webkit-animation: giro 4s linear infinite;
+  animation: giro 4s linear infinite;
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;  
+}
+  
+@keyframes giro {
+  0% {
+    -webkit-transform: rotateY(-10deg);
+    transform: rotateY(-10deg);
+  }
+  50% {
+    -webkit-transform: rotateY(10deg);
+    transform: rotateY(10deg);
+  }
+  100% {
+    -webkit-transform: rotateY(-10deg);
+    transform: rotateY(-10deg);
+  }
+}
+
+.productIMG {
+  position: absolute;
+  z-index: 1;
+  right: calc(26vw - 93px);
+  top: 70px;
+}
+  
+.heroText {
+  padding: 36px 29px;
+  text-align: center;
+  color: #fff;
+  text-transform: uppercase;
+  background: rgb(0 0 0 / 48%);
+  display: flex;
+  flex-direction: column;
+  gap: 13px;
+}
+  
+
+.heroText h2 {
+  font-size: 24px;
+  font-weight: lighter; 
+} 
+  
+.askInfoBTN {
+  border: none;
+  background: #cfcfcf;
+  color: #333333;
+  text-align: center;
+  width: 322px;
+  padding: 13px;
+  font-size: 17px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: .5s;
+}
+  
+.askInfoBTN:hover {
+  
+  box-shadow: 0 0 8px #efe6ff;
+  background: rgb(8 135 124);
+  color: #efe6ff;
+}
+  
+
+
+@media (max-width: 850px){
+  .landingHero {
+    padding: 0 30px;
+    text-align: center;
+    align-items: center;
+  }
+
+  .logoBar {
+    top: 72px;
+  }
+
+  .logoContainer {
+    flex-direction: column;
+    transform: scale(0.8);
+    margin: 0;
+  }
+
+  .logoContainer.active {
+    flex-direction: row;
+    margin-left: calc(32vw - 126px);
+  }
+
+  .logo {
+    animation: giroResp 4s linear infinite;
+  }
+
+  @keyframes giroResp {
+    0% {
+      -webkit-transform: rotateY(-15deg);
+      transform: rotateY(-15deg);
+    }
+    50% {
+      -webkit-transform: rotateY(15deg);
+      transform: rotateY(15deg);
+    }
+    100% {
+      -webkit-transform: rotateY(-15deg);
+      transform: rotateY(-15deg);
+    }
+  }
+
+  .heroText {
+    margin-top: 260px;
+    padding: 0;
+  }
+
+  .heroText h1 {
+    font-size: 30px;
+  }
+
+  .heroText h3 {
+    font-size: 20px;
+  }
+}  
