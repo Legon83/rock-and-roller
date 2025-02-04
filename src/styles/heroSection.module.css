@@ -13,6 +13,7 @@
 }
 
 .mainMenu li {
+  color: #fff;
   cursor: pointer;
   padding: 0 10px;
   padding-bottom: 2px;
@@ -52,7 +53,7 @@
   position: fixed;
   z-index: 2;
   top: 0;
-  background: rgb(255 255 255 / 55%);
+  background: rgb(59 59 59 / 55%);
   height: 46px;
   backdrop-filter: blur(9px);
 }
@@ -129,22 +130,25 @@
 }
   
 .askInfoBTN {
-  border: none;
-  background: #cfcfcf;
-  color: #333333;
+  background: rgb(8 135 124);
+  color: #fff;
   text-align: center;
-  width: 192px;
-  padding: 13px;
+  width: 179px;
+  height: 31px;
+  padding: 3px 13px;
+  margin: 3px;
   font-size: 17px;
   font-weight: bold;
   cursor: pointer;
   transition: .5s;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
 }
   
 .askInfoBTN:hover {
-  
   box-shadow: 0 0 8px #efe6ff;
-  background: rgb(8 135 124);
+  background: #373737;
   color: #efe6ff;
 }
   

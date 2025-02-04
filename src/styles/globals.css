@@ -15,12 +15,7 @@ body {
 
 body {
   color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  background: #272727;
 }
 
 a {
@@ -36,6 +31,6 @@ footer {
   text-align: center;
   line-height: 46px;
   color: #fff;
-  background: rgb(1 33 29);
+  background: rgb(16 16 16);
 }
 

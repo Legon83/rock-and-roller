@@ -22,9 +22,9 @@ const HeroSection = ({handleScrollToForm}) => {
         <main>
             <div className={styles.mainMenu}>
                 <ul>
-                    <li>PRODUCTOS</li>I
-                    <li>CONTACTO</li>I
-                    <li>TIENDA</li>
+                   <li>PÁGINA EN DESARROLLO</li>
+                    {/*  <li>CONTACTO</li>I
+                    <li>TIENDA</li> */}
                 </ul>
             </div>
             <div className={`${styles.logoBar} ${topLogo && styles.active}`}>
@@ -38,7 +38,33 @@ const HeroSection = ({handleScrollToForm}) => {
                     <h2>Precisión y portabilidad al alcance de tu mano...</h2>
                     <h3>El primer enrolador cónico de bolsillo</h3>
                 </div>
-                <button className={styles.askInfoBTN} onClick={handleScrollToForm}>COMPRAR AHORA</button>
+                {/* <button className={styles.askInfoBTN} onClick={handleScrollToForm}>COMPRAR AHORA<br/>Próximamente!</button> */}
+                
+                    
+                <div>
+                    <a href='https://www.instagram.com/rocknroller.ar' target='_blank' className={styles.askInfoBTN} title="Ir a Instagram">
+                        <img
+                            src="/igIcon.png"
+                            alt="Ig Icon"
+                        />
+                        INSTAGRAM
+                    </a>
+                    <a href='https://www.facebook.com/rocknroller.ar/' target='_blank' className={styles.askInfoBTN} title="Ir a Facebook">
+                        <img
+                            src="/facebookIcon.png"
+                            alt="Facebook Icon"
+                        />
+                        FACEBOOK
+                    </a>
+                    {/* <a href='https://linkedIn/showtechroom.com' target='_blank' className={styles.askInfoBTN}>
+                        <img
+                            src="/youtubeIcon.png"
+                            alt="YouTube Icon"
+                            title="Ir a YouTube"
+                        />
+                        YOUTUBE
+                    </a> */}
+                </div>
             </div>
         </main>
     )

@@ -1,11 +1,12 @@
 .prodResume {
-    height: 464px;
+  /*   height: 464px; */
     display: flex;
     justify-content: space-between;
 }
 
 .resumeTextContainer {
-    padding: 70px;
+    width: 100%;
+    padding: 5.5vw;
     color: #fff;
     background: rgb(8 135 124);
 }
@@ -25,4 +26,12 @@
 .resumeIMGcontainer {
     background: #c6c6c6;
     padding: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+@media (max-width: 850px){
+    .prodResume {
+        flex-direction: column-reverse;
+    }
 }

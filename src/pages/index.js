@@ -19,6 +19,8 @@ export default function Home() {
     formSectionRef.current.scrollIntoView({ behavior: 'smooth' });
   }
 
+  const currentYear = new Date().getFullYear()
+
 
   return (
     <>
@@ -35,7 +37,7 @@ export default function Home() {
       <WhatsAppSection/>
       <BottomSection handleScrollToForm={handleScrollToForm}/> */}
       <footer>
-        Rock&Roller
+        Rock&Roller® {currentYear}
       </footer>
 
     </>
