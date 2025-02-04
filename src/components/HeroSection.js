@@ -1,9 +1,20 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import styles from '@/styles/heroSection.module.css'
 
 const HeroSection = ({handleScrollToForm}) => {
 
     const [ topLogo, setTopLogo ] = useState(false)
+    const [isMobile, setIsMobile] = useState(false)
+
+    useEffect(() => {
+        // Detectamos si el dispositivo es móvil
+        if (typeof window !== "undefined") {
+          const userAgent = navigator.userAgent || navigator.vendor || window.opera;
+          if (/android/i.test(userAgent) || /iPhone|iPad|iPod/i.test(userAgent)) {
+            setIsMobile(true);
+          }
+        }
+      }, [])
 
     const moveLogoToTop = () => {
         if(window.scrollY >= 100){
@@ -42,7 +53,12 @@ const HeroSection = ({handleScrollToForm}) => {
                 
                     
                 <div>
-                    <a href="instagram://user?username=rocknroller.ar" className={styles.askInfoBTN} title="Ir a Instagram">
+                    <a
+                        href={isMobile ? "instagram://user?username=rocknroller.ar" : "https://www.instagram.com/rocknroller.ar"}
+                        target="_blank"
+                        className={styles.askInfoBTN}
+                        title="Ir a Instagram"
+                    >
                         <img
                             src="/igIcon.png"
                             alt="Ig Icon"
