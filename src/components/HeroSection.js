@@ -42,7 +42,7 @@ const HeroSection = ({handleScrollToForm}) => {
                 
                     
                 <div>
-                    <a href='https://www.instagram.com/rocknroller.ar' target='_blank' className={styles.askInfoBTN} title="Ir a Instagram">
+                    <a href="instagram://user?username=rocknroller.ar" className={styles.askInfoBTN} title="Ir a Instagram">
                         <img
                             src="/igIcon.png"
                             alt="Ig Icon"
