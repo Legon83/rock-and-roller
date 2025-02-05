@@ -52,11 +52,11 @@ const HeroSection = ({handleScrollToForm}) => {
                 {/* <button className={styles.askInfoBTN} onClick={handleScrollToForm}>COMPRAR AHORA<br/>Próximamente!</button> */}
                 
                     
-                <div>
+                <div className={styles.linksBTNcontainer}>
                     <a
                         href={isMobile ? "instagram://user?username=rocknroller.ar" : "https://www.instagram.com/rocknroller.ar"}
                         target="_blank"
-                        className={styles.askInfoBTN}
+                        className={styles.linkBTN}
                         title="Ir a Instagram"
                     >
                         <img
@@ -65,21 +65,20 @@ const HeroSection = ({handleScrollToForm}) => {
                         />
                         INSTAGRAM
                     </a>
-                    <a href='https://www.facebook.com/rocknroller.ar/' target='_blank' className={styles.askInfoBTN} title="Ir a Facebook">
+                    <a href='https://www.facebook.com/rocknroller.ar/' target='_blank' className={styles.linkBTN} title="Ir a Facebook">
                         <img
                             src="/facebookIcon.png"
                             alt="Facebook Icon"
                         />
                         FACEBOOK
                     </a>
-                    {/* <a href='https://linkedIn/showtechroom.com' target='_blank' className={styles.askInfoBTN}>
+                    <a href='https://articulo.mercadolibre.com.ar/MLA-1471729385-picador-armador-conico-2-en-1-rockroller-_JM' target='_blank' className={styles.linkBTN} title="Link de compra">
                         <img
-                            src="/youtubeIcon.png"
-                            alt="YouTube Icon"
-                            title="Ir a YouTube"
+                            src="/buyIcon.png"
+                            alt="Buy Icon"
                         />
-                        YOUTUBE
-                    </a> */}
+                        LINK DE COMPRA
+                    </a>
                 </div>
             </div>
         </main>

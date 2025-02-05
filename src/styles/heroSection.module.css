@@ -128,25 +128,28 @@
 .heroText h3 {
   font-size: calc(1vw + 11px);
 }
+
+.linksBTNcontainer {
+  width: 100%;
+  max-width: 240px;
+}
   
-.askInfoBTN {
+.linkBTN {
   background: rgb(8 135 124);
   color: #fff;
   text-align: center;
-  width: 179px;
   height: 31px;
   padding: 3px 13px;
-  margin: 3px;
-  font-size: 17px;
+  margin: 3px 0;
+  font-size: 16px;
   font-weight: bold;
   cursor: pointer;
   transition: .5s;
   display: flex;
-  align-items: center;
-  justify-content: space-evenly;
+  justify-content: center;
 }
   
-.askInfoBTN:hover {
+.linkBTN:hover {
   box-shadow: 0 0 8px #efe6ff;
   background: #373737;
   color: #efe6ff;
