@@ -72,7 +72,7 @@ const HeroSection = ({handleScrollToForm}) => {
                         />
                         FACEBOOK
                     </a>
-                    <a href='https://articulo.mercadolibre.com.ar/MLA-1471729385-picador-armador-conico-2-en-1-rockroller-_JM' target='_blank' className={styles.linkBTN} title="Link de compra">
+                    <a href='https://articulo.mercadolibre.com.ar/MLA-1462395273-picador-maquina-p-armado-conico-2en1-rockroller-_JM' target='_blank' className={styles.linkBTN} title="Link de compra">
                         <img
                             src="/buyIcon.png"
                             alt="Buy Icon"
